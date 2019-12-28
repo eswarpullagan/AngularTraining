@@ -2,14 +2,20 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: '[app-test]',
-  template: '<div>Inline Template</div>',
+  templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-
+  subtitle="I am test Component"
+name="Eswar"
+dynamic="Dynamic"
+siteUrl=window.location.href
   constructor() { }
 
   ngOnInit() {
   }
-
+greetUser()
+{
+  return "Hello "+this.name;
+}
 }
