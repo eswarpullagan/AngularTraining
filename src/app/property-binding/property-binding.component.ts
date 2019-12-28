@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
               <h2>
               {{name}}
               </h2>
-              <input type="text" value="Eswar">
+              <input [id]="myId" type="text" value="Eswar">
             <div>`,
   styleUrls: ['./property-binding.component.css']
 })
 export class PropertyBindingComponent implements OnInit {
   public name="Angular Training"
+  public myId="testId"
   constructor() { }
 
   ngOnInit() {
