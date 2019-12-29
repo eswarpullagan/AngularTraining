@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule
