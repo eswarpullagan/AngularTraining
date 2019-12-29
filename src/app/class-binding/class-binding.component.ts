@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   <h2 class="text-success">Angular Training</h2> 
   <h2 [class]="successClass">Angular Training - Class Property</h2>   
   <h2 class="text-special" [class]="successClass">Angular Training - Attribute and Class Property- Attribute becomes dummy</h2> 
+  <h2 [class.text-danger]="hasError">Angular Training - Class Property- Conditional Class</h2>   
   `,
   styles:[`
     .text-success{
@@ -23,6 +24,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClassBindingComponent implements OnInit {
   name="Eswar"
   successClass="text-success"
+  hasError=true
   constructor() { }
 
   ngOnInit() {
