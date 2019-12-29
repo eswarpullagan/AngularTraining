@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-style-binding',
   template: ` <h2>Welcome {{name}}</h2>
   <h2>Angular Training</h2>
-  <h2 [style.color]="'orange'">Angular Training </h2>`,
+  <h2 [style.color]="'orange'">Angular Training </h2>
+  <h2 [style.color]="hasError?'red':'green'">Angular Training - Conditional Style Binding</h2>
+  `,
   styleUrls: ['./style-binding.component.css']
 })
 export class StyleBindingComponent implements OnInit {
