@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   <h2>Welcome {{name}}</h2>
   <h2 class="text-success">Angular Training</h2> 
   <h2 [class]="successClass">Angular Training - Class Property</h2>   
+  <h2 class="text-special" [class]="successClass">Angular Training - Attribute and Class Property- Attribute becomes dummy</h2> 
   `,
   styles:[`
     .text-success{
